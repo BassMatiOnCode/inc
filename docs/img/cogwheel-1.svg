@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	viewBox="0 0 160 160" width="160" height="160" style="background-color: none">
+
+<symbol id="tooth" overflow="visible">
+	<g transform="translate(0, 0)">
+	<path d="M 0 50 A 30 30 15 0 0 15.27 68.31 A 70 70 25 0 0 27.80 64.24 A 30 30 15 0 0 29.39 40.45 A 50 50 25 0 0 39.09 31.17"/>
+	</g>
+	</symbol>
+
+<g><xline x1="0" y1="0" x2="50" y2="50"/></g>
+<g fill="none" transform="scale(1, 1) translate(0, 0)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" stroke="#555">
+	<use href="#tooth" x="80" y="80" />
+	<use href="#tooth" x="80" y="80" transform="rotate(51.43,80,80)"/>
+	<use href="#tooth" x="80" y="80" transform="rotate(102.86,80,80)"/>
+	<use href="#tooth" x="80" y="80" transform="rotate(154.29,80,80)"/>
+	<use href="#tooth" x="80" y="80" transform="rotate(205.71,80,80)"/>
+	<use href="#tooth" x="80" y="80" transform="rotate(257.14,80,80)"/>
+	<use href="#tooth" x="80" y="80" transform="rotate(308.57,80,80)"/>
+	<circle cx="80" cy="80" r="20"/>
+	<xcircle cx="80" cy="80" r="35"/>
+	<path d="M 0 35 A 35 35 20 0 0 28.67 -20.08 M 22.50 -26.81 A 35 35 25 0 0 -3.05 -34.87 M -10.82 -33.29 A 35 35 5 0 0 -11.97 -32.89 M -19.06 -29.35 A 35 35 5 0 0 -20.08 -28.67 M -26.81-22.50 A 35 35 45 0 0 -9.06 33.81" stroke-width="4" transform="translate(80,80)" />
+	</g>
+
+</svg>
