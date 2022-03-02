@@ -137,12 +137,12 @@ function collapse( controller ) {
 
 export function expandAllBlocks (  ) {
 	/// Expand all collapsible content blocks.
-	document.querySelectorAll( "#content [cbc='collapsed']" ).forEach( expand );
+	document.querySelectorAll( "#page-content [cbc='collapsed']" ).forEach( expand );
 	}
 
 export function collapseAllBlocks ( ) {
 	/// Collapse all collapsible content blocks.
-	document.querySelectorAll( "#content [cbc='expanded']" ).forEach( collapse );
+	document.querySelectorAll( "#page-content [cbc='expanded']" ).forEach( collapse );
 	}
 
 export function toggleAllBlocks ( evt ) {
