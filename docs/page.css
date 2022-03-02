@@ -128,7 +128,7 @@ figcaption {
 figcaption+pre {
 	margin-top : 0px ;
 	margin-bottom : 40px ;
-	border-top : 1px solid silver;
+	border : 1px solid silver;
 	}
 
 figcaption+iframe {
