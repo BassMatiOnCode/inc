@@ -11,6 +11,7 @@
 	border-top : 1px none gray;
 	border-bottom : 1px solid darkorange;
 	background-color : white ;
+	z-index : 10 ;
 	}
 
 svg.tool.button g { stroke : gray }
