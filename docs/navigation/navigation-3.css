@@ -12,7 +12,8 @@
 	background-color : white ;
 	white-space : nowrap ;
 	transition : width 1s linear ;
-	border : 1px solid orange ;	
+	border : 1px solid orange ;
+	z-index : 20 ;
 	}
 
 #navigation-panel a { 
