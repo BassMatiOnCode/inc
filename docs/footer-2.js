@@ -30,11 +30,11 @@ export function initPage ( ) {
 export function addNavigationLinks( navigation ) {
 	let s = "" ; 
 	if ( navigation ) {
-		if ( navigation.parent !== "#" ) s += `<a href="${navigation.parent}">Up</a> | `
-		if ( navigation.first !== "#" ) s += `<a href="${navigation.first}">First</a> | `
-		if ( navigation.previous !== "#" ) s += `<a href="${navigation.previous}">Previous</a> | `
-		if ( navigation.next !== "#" ) s += `<a href="${navigation.next}">Next</a> | `
-		if ( navigation.last !== "#" ) s += `<a href="${navigation.last}">Last</a> | `
+		if ( navigation.parent !== "#" ) s += `<a href="${navigation.parent}">Up</a> | ` ;
+		if ( navigation.first !== "#" ) s += `<a href="${navigation.first}">First</a> | ` ;
+		if ( navigation.previous !== "#" ) s += `<a href="${navigation.previous}">Previous</a> | ` ;
+		if ( navigation.next !== "#" ) s += `<a href="${navigation.next}">Next</a> | ` ;
+		if ( navigation.last !== "#" ) s += `<a href="${navigation.last}">Last</a> | ` ;
 		}
 	s += '<a href="/legal.htm">Legal</a>' ;
 	document.getElementById( "page-footer" ).innerHTML += s ;
