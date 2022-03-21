@@ -80,7 +80,7 @@ ol.collapsible ol {
 	overflow-y : hidden ;
 	margin-left : -20px ;
     }
-[cbc-default="collapsed"] ol {
+[cbc-default="collapsed"] ol.collapsible {
 	height : 0px ;
     }
 
