@@ -84,6 +84,11 @@
 	margin-bottom: 20px; 
 	}
 
+.unspaced-items li {
+	margin-top: 0 ;
+	margin-bottom: 0 ;
+	}
+
 .spaced-nested ul, ol {
 	margin-bottom : 20px ;
 	}
