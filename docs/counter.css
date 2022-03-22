@@ -9,4 +9,4 @@ table > caption.autonum:before { counter-increment : table-counter ; content : "
 
 ol.instructions, ol.instructions ol { list-style-type : none ; counter-reset : instruction-counter }
 ol.continue { counter-reset : none }
-ol.instructions li:before{  counter-increment : instruction-counter; content : counters(instruction-counter, ".")  ". " ; }
+ol.instructions>li:before, ol.instructions ol>li:before{  counter-increment : instruction-counter; content : counters(instruction-counter, ".")  ". " ; }
