@@ -202,11 +202,6 @@ pre.tall {
 	max-width: 95% ;
 	}
 
-tt {
-	font-size: 100% ;
-	font-family: "Palatino Linotype", Consolas, "Lucida Console" ;
-	}
-
 table.centered tbody td {
 	text-align : center ;
 	}
@@ -232,7 +227,10 @@ table.flat-borders tr :first-child {
 	}
 	
 table.no-borders tr * {
+	line-height : 140% ;
 	border-style : none ;
+	padding-left : 10px ;
+	padding-right : 10px ;
 	}
 
 tr.column-headers {
@@ -242,4 +240,9 @@ tr.column-headers {
 
 tr.column-headers * {
 	padding-right : 10px ;
+	}
+
+tt {
+	font-size: 100% ;
+	font-family: "Palatino Linotype", Consolas, "Lucida Console" ;
 	}
