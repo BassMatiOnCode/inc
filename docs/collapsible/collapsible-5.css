@@ -62,7 +62,8 @@ ul.collapsible ul {
 	margin-left : -10px ;
 	padding-left : 25px ;
     }
-[cbc-default="collapsed"] ul {
+[cbc-default="collapsed"] .collapsible ul,
+[cbc-default="collapsed"] .collapsible ol {
 	height : 0px ;
     }
 
