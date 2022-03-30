@@ -93,6 +93,12 @@
 	margin-bottom : 20px ;
 	}
 
+.wrap-indent {
+	white-space : normal ;
+	padding-left : 20px ;
+	text-indent : -15px ;
+	}
+
 #content {
 	overflow : visible ;
 	}
