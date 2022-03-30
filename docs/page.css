@@ -128,6 +128,19 @@ dl.description-list dd {
 	margin-top : 10px ;
 	margin-bottom : 10px ;
 	}
+
+dl.syntax { 
+	font-family : Merriweather, "Times New Roman", "Bookman Old Style", Garamond ;
+	font-size : 110% ;
+	}
+
+dl.syntax a { 
+	text-decoration : none ;
+	}
+
+dl.syntax a:hover {
+	text-decoration : underline ;
+	}
 	
 figcaption {
 	font-family : "Times New Roman";
@@ -154,6 +167,12 @@ figcaption+iframe {
 
 figcaption+img {
 	border-top-style : solid ;
+	}
+
+figcaption+dl {
+	margin-top : 0px ;
+	padding-top : 5px ;
+	border-top : 1px solid silver ;
 	}
 
 h1, h2, h3, h4, h5, h6 { 
