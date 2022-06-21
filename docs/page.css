@@ -1,6 +1,6 @@
 /*
  *	page.css
- *	2022-01-27 usp
+ *	2022-06-21 usp
  */
 
 @import url( header-2.css );
@@ -84,12 +84,13 @@
 	margin-bottom: 20px; 
 	}
 
-.unspaced-items li {
+.unspaced-items li{
 	margin-top: 0 ;
 	margin-bottom: 0 ;
 	}
 
-.spaced-nested ul, ol {
+.spaced-nested ul, 
+.spaced-nested ol {
 	margin-bottom : 20px ;
 	}
 
@@ -129,6 +130,11 @@ dl.description-list dd {
 	margin-bottom : 10px ;
 	}
 
+dl.unspaced-items dd {
+	margin-top : 0px ;
+	margin-bottom : 0px ;
+	}
+	
 dl.syntax { 
 	font-family : Merriweather, "Times New Roman", "Bookman Old Style", Garamond ;
 	font-size : 110% ;
@@ -136,12 +142,17 @@ dl.syntax {
 
 dl.syntax a { 
 	text-decoration : none ;
+	color : #2896d1 ;
 	}
 
 dl.syntax a:hover {
 	text-decoration : underline ;
 	}
-	
+
+dl.syntax a:visited {
+	color : darkviolet ;
+	}
+
 figcaption {
 	font-family : "Times New Roman";
 	font-style : italic ;
@@ -251,11 +262,17 @@ table.flat-borders tr :first-child {
 	border-left-style : solid ;
 	}
 	
-table.no-borders tr * {
+table.no-borders tr td, 
+table.no-borders tr th {
 	line-height : 140% ;
 	border-style : none ;
 	padding-left : 10px ;
 	padding-right : 10px ;
+	}
+
+table.matrix {
+	border-left : 1px solid black;
+	border-right : 1px solid black;
 	}
 
 tr.column-headers {
@@ -271,3 +288,7 @@ tt {
 	font-size: 100% ;
 	font-family: "Palatino Linotype", Consolas, "Lucida Console" ;
 	}
+
+	/* right arrow: &#8407; */
+vector { font-style : italic }
+vector > arrow { vertical-align : 3px }

@@ -3,6 +3,7 @@
 body { counter-reset : listing-counter figure-counter table-counter example-counter }
 figcaption.listing:before { counter-increment : listing-counter; content : "Listing " counter(listing-counter) ": " ; }
 figcaption.figure:before { counter-increment : figure-counter; content : "Figure " counter(figure-counter) ": " ; }
+figcaption.syntax:before { counter-increment : syntax-counter; content : "Syntax " counter(listing-counter) ": " ; }
 figcaption.table:before { counter-increment : table-counter; content : "Table " counter(table-counter) ": " ; }
 figcaption.example:before { counter-increment : example-counter; content : "Example " counter(example-counter) ": " ; }
 table > caption.autonum:before { counter-increment : table-counter ; content : "Table " counter(listing-counter) ": " ; }
