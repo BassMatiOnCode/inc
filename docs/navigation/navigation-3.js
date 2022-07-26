@@ -1,5 +1,5 @@
 ﻿//
-// navigation-3.js  2022-02-04  usp
+// navigation-3.js  2022-07-15  usp
 //
 
 	// Store a reference to the frequently needed navigation panel
@@ -87,7 +87,7 @@ export function activateLinkChain( e ) {
 	while ( (e = e.parentNode) ) {
 		if ( e.tagName === "LI" ) {
 			let link = e.querySelector( "LI>A" );
-			if ( link ) parents.unshift( link.href );
+			if ( link ) parents.unshift( link );
 			e.setAttribute( "active", "" );
 			if ( e.getAttribute( "cbc" ) === "collapsed" ) {
 				e.setAttribute( "cbc", "expanded" );
@@ -105,6 +105,6 @@ export function findCurrentDocument( ) {
 	if ( ! link ) link = findDocumentLink( document.location.pathname + document.location.hash, false, links ) ;
 	if ( link ) activateLinkChain( link );
 	// Add the home page to the parents list
-	if ( links.length > 0 ) parents[ 0 ] = links[ 0 ].href ;
-	parent = parents[ parents.length - 1 ];
+	if ( links.length > 0 ) parents[ 0 ] = links[ 0 ] ;
+	parent = parents[ parents.length - 1 ].href;
 	}

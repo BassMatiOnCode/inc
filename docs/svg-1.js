@@ -1,5 +1,5 @@
 ﻿//
-//  svg-1.js    2021-09-17    usp
+//  svg-1.js    2022-07-20    usp
 //
 
 export const svgNameSpace = "http://www.w3.org/2000/svg" ;
@@ -23,6 +23,12 @@ export function line ( x1, y1, x2, y2, attributes = { } ) {
 	attributes.x2 = x2 ;
 	attributes.y2 = y2 ;
 	return createElement( "line", attributes );
+	}
+
+export function oval ( r1, r2, r, angle, attributes = { } ) {
+	attributes.d = `M ${-r} ${r1} A ${r} ${r} 180 0 0 ${+r} ${r1} V ${r2} A ${r} ${r} 180 0 0 ${-r} ${r2} V ${r1}` ;
+	attributes.transform = `rotate( ${angle} )` ;
+	return createElement( "path", attributes );
 	}
 
 export function rect ( x, y, w, h, rx=0, ry=0, attributes = { } ) {
@@ -50,7 +56,7 @@ function lineIntersection ( m1, b1, m2, b2 ) {
 }
 
 function pStr ( point ) {
-  return `${point.x},${point.y} `;
+  return `${point.y},${-point.x} `; // exchange of parameters rotates path 90 degree counter-clockwise
 }
 
 export function spiral (x0, y0, r0, deltaR, a0, count, deltaA, attributes = { }) {
@@ -60,10 +66,11 @@ export function spiral (x0, y0, r0, deltaR, a0, count, deltaA, attributes = { })
     ///  r0 : Initial radius at starting angle
     ///  deltaR : Radius increment per turn
     ///  a0, a2 : Start and end angles
+	///	  count : number of ticks, usually more than 12
     ///  deltaA : Angle increment
     ///  attributes : Additional attributes on the path element
     
-    deltaR = deltaR / Math.PI / 2;   // noramalize to radians
+    deltaR = deltaR / Math.PI / 2;   // normalize to radian
     const a2 = (a0 + count * deltaA) * Math.PI / 180;  // end angle
     // angles to radians
     let a1 = a0 = a0 * Math.PI / 180;
