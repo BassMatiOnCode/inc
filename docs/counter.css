@@ -1,4 +1,4 @@
-﻿/* counter.css  2022-07-20  usp */
+/* counter.css  2022-07-20  usp 2022-11-15 usp */
 
 body { counter-reset : listing-counter figure-counter table-counter caption-counter example-counter definition-counter }
 figcaption.listing:before { counter-increment : listing-counter; content : "Listing " counter(listing-counter) ": " ; }
@@ -9,6 +9,7 @@ figcaption.example:before { counter-increment : example-counter; content : "Exam
 table > caption.autonum:before { counter-increment : caption-counter ; content : "Table " counter(caption-counter) ": " ; }
 div.definition figcaption:before { counter-increment : definition-counter; content : "Definition " counter(definition-counter) ; }
 
-ol.instructions, ol.instructions ol { list-style-type : none ; counter-reset : instruction-counter }
+ol.instructions, ol.instructions ol { list-style-type : none ; counter-reset : instruction-counter ; padding-left : 20px }
 ol.continue { counter-reset : none }
 ol.instructions>li:before, ol.instructions ol>li:before{  counter-increment : instruction-counter; content : counters(instruction-counter, ".")  ". " ; }
+ol.instructions { padding-left : 0px }

@@ -17,7 +17,13 @@ export function loadFragments ( container = document.body ) {
 		console.log( "Loading: ", url );
 		promises.push( fetch( url )
 			.then ( response => response.ok ? response.text( ) : "Not found: " + url )
-			.then (( text ) => e.innerHTML = text )
+			.then (( text ) => { 
+				if ( ! e.hasAttribute( "replace" )) e.innerHTML = text.trim( );
+				else {
+					const template = document.createElement( "TEMPLATE" );
+					template.innerHTML = text.trim( );
+					e.replaceWith( ...template.content.children ) ;
+				}	}	)
 			.then (( ) => { if ( e.id !== "navigation-panel" ) {
 				// Remove auxiliary parent nodes for partial website projects
 				const sroot = e.querySelector( "[section-root]" );
