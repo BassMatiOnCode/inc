@@ -1,5 +1,5 @@
 //
-// collapsible-block-5.js  2022-02-06  usp
+// collapsible-block-5.js  2022-09-24  usp
 //
 
 const urlDefaultState = new URLSearchParams( document.location.search ).get( "cbc-override" );
@@ -31,7 +31,8 @@ function initCollapsibleULtrees( container = document ) {
 		for ( let j = 0 ; j < blocks.length ; j ++ ) {
 			let block = blocks[ j ];
 			let controller = block.parentNode;
-			while ( controller.tagName !== "LI" ) controller = controller.parentNode ;
+			while ( controller && controller.tagName !== "LI" ) controller = controller.parentNode ;
+			if ( !controller ) break;
 				// Set initial controller state if necessary.
 			let controllerState = getInitialControllerState( controller );
 			controller.setAttribute( "cbc", controllerState );	
