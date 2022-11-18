@@ -8,6 +8,7 @@
 @import url( toolbar/toolbar-2.css );
 @import url( collapsible/collapsible-5.css );
 @import url( navigation/navigation-3.css );
+@import url( navigation/path-bar-1.css );
 @import url( counter.css );
 @import url( colors.css );
 @import url( colors.css );
@@ -30,7 +31,8 @@
 	}
 
 @media print {
-	.menu-bar { display : none !important ; }
+	#main-toolbar , .path-bar , #navigation-panel  { display : none !important ; }
+	table { page-break-inside : avoid }
 	}
 
 .border-top {
@@ -177,13 +179,17 @@ figcaption+iframe {
 	}
 
 figcaption+img {
-	border-top-style : solid ;
+	border-top : 1px solid silver;
 	}
 
 figcaption+dl {
 	margin-top : 0px ;
 	padding-top : 5px ;
 	border-top : 1px solid silver ;
+	}
+
+figure { 
+	margin-left : 10px ;
 	}
 
 h1, h2, h3, h4, h5, h6 { 
@@ -238,6 +244,14 @@ pre.tall {
 	max-width: 95% ;
 	}
 
+table caption { 
+	font-family : "Times New Roman";
+	font-style : italic ;
+	color: #A0A0A0 ;
+	text-align : left ;
+	margin-left : 10px ;
+	}
+
 table.centered tbody td {
 	text-align : center ;
 	}
@@ -254,7 +268,9 @@ table.flat-borders tr * {
 	padding-right: 5px;
 	}
 
-table.flat-borders :first-child :first-child * {
+table.flat-borders colgroup+tbody :first-child *,
+table.flat-borders colgroup+thead :first-child *,
+table.flat-borders :first-child :first-child *	{
 	border-top-style : solid ;
 	}
 
@@ -283,6 +299,11 @@ tr.column-headers {
 tr.column-headers * {
 	padding-right : 10px ;
 	}
+
+table tbody tr :first-child { text-align : left }
+table.data-centered tbody td { text-align : center }
+table.header-weight-normal th { font-weight : normal }
+table.header-weight-normal thead th { font-style : italic }
 
 tt {
 	font-size: 100% ;

@@ -7,7 +7,7 @@
 #page-header { background-color : #204080; }
 #navigation-panel a:visited { color : purple ; }
 #navigation-panel a { color: inherit ; }
-body { color : #333 ; }
+body {/* color : #333 ; */}
 cc { color : #392 ; }
 figcaption+iframe { background-color : white ; }
 figcaption+pre { background-color : #FFFFFF ; }

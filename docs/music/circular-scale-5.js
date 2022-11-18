@@ -1,5 +1,5 @@
 ﻿//
-//	circular-scale-5.js    2022-07-20   usp
+//	circular-scale-5.js    2022-07-26   usp
 //
 
 import { createElement, circle, spiral, line, oval, text } from "/inc/svg-1.js" ;
