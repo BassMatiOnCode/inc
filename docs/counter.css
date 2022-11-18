@@ -1,4 +1,4 @@
-﻿/* counter.css  2022-07-20  usp 2022-11-15 usp */
+/* counter.css  2022-07-20  usp 2022-11-15 usp */
 
 body { counter-reset : listing-counter figure-counter table-counter caption-counter example-counter definition-counter }
 figcaption.listing:before { counter-increment : listing-counter; content : "Listing " counter(listing-counter) ": " ; }
