@@ -1,6 +1,6 @@
 /*
  *	page.css
- *	2022-09-24 usp
+ *	2023-01-23 usp
  */
 
 @import url( header-2.css );
@@ -242,6 +242,11 @@ pre {
 pre.tall {
 	display : inline-block;
 	max-width: 95% ;
+	}
+
+table {
+	margin-top : 20px ;
+	margin-bottom : 20px ;
 	}
 
 table caption { 
