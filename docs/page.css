@@ -128,6 +128,30 @@ dd {
 	margin-left: 20px ;
 	}
 
+dl.airy dd {
+	margin-top: 10px ;
+	margin-bottom : 10px;
+	}
+
+dl.collapsible.airy [cbc="collapsed"]+dd {
+	margin-top: 0px ;
+	margin-bottom : 0px;
+	}
+
+dl.collapsible.airy dd[margin-top="0px"]+dd {
+	margin-top: 0px ;
+	margin-bottom : 0px;
+	}
+
+dl.airy dt {
+	margin-top : 20px ;
+	}
+
+dl.collapsible.airy dt[cbc="collapsed"] {
+	margin-top : 0px ;
+	margin-bottom : 0px ;
+	}
+
 dl.airy-titles dd+dt {
 	margin-top : 20px ;
 	}
@@ -242,7 +266,7 @@ pre {
 	margin-left : 0px ; 
 	padding : 10px 10px 11px 10px ;
 	overflow: auto ;
-	tab-size : 4 ;
+	tab-size : 2 ;
 	}
 
 pre.tall {
