@@ -1,1 +1,0 @@
-../../spreadsheet/docs/test/spreadsheet-interactive-0.js
