@@ -1,1 +1,19 @@
-../../spreadsheet/docs/test/spreadsheet-0.css
+table.spreadsheet, 
+table.spreadsheet td, 
+table.spreadsheet th {
+	border : 1px solid silver;
+	border-collapse : collapse;
+	}
+
+table.spreadsheet th,
+table.spreadsheet td {
+	padding : 2px 5px;
+	min-width : 20px;
+	height : 20px;
+	}
+
+table.spreadsheet tr.column-labels td,
+table.spreadsheet td.row-label {
+	background-color : #EEE ;
+	}
+
