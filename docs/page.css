@@ -1,6 +1,6 @@
 /*
  *	page.css
- *	2022-09-24 usp
+ *	2023-05-15 usp
  */
 
 @import url( header-2.css );
@@ -10,8 +10,8 @@
 @import url( navigation/navigation-3.css );
 @import url( navigation/path-bar-1.css );
 @import url( counter.css );
+@import url( css/underlined-figcaption.css );
 @import url( /site.css );
-@import url( /colors.css );
 
 @font-face { 
 	font-family: "arial narrow"; 
@@ -111,12 +111,23 @@
 	padding-right : 20px ;
 	}
 
+[boxed] { 
+	border : 1px solid silver ;
+	}
+
+[symbol] {
+	font-family : "Cambria Math", "Times New Roman" ;
+	xfont-style : italic ;
+	padding-right : 3px ;
+	}
+
 body {
 	font-family : "Segoe UI", Calibri, Verdana, Arial, "Palatino Linotype", Hevetica ;
 	margin : 0 ;
 	line-height : 180% ;
 	font-size : 12pt ;
 	padding-bottom : 20px ;
+	color : #606060 ;
 	}
 	
 caption {
@@ -125,6 +136,20 @@ caption {
 
 dd {
 	margin-left: 20px ;
+	}
+
+div.math {
+	padding-left : 20px ;
+	margin-top : 30px ; 
+	margin-bottom : 20px ;
+	}
+
+div.math > div {
+	display : inline-block ;
+	}
+
+div.math + div.math {
+	margin-top : 30px ;
 	}
 
 dl.description-list dd {
@@ -164,6 +189,7 @@ figcaption {
 	margin-bottom : 0px;
 	padding-left : 10px ;
 	padding-bottom : 5px ;
+	line-height : 150% ;
 	}
 
 figcaption+pre {
@@ -229,6 +255,13 @@ li p {
 li pre {
 	white-space : pre-line ;
 	}
+	
+ol[compact] li,
+ul[compact] li {
+	line-height : 120% ;
+	margin-top : 10px ;
+	margin-bottom : 10px ;
+	}
 
 pre { 
 	font-family: "Droid Sans Mono", "Times New Roman", "Palatino Linotype", Serif, Consolas;
@@ -237,6 +270,7 @@ pre {
 	margin-left : 0px ; 
 	padding : 10px 10px 11px 10px ;
 	overflow: auto ;
+	tab-size : 4 ;
 	}
 
 pre.tall {
