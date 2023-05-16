@@ -12,6 +12,7 @@
 @import url( counter.css );
 @import url( css/underlined-figcaption.css );
 @import url( /site.css );
+@import url( /colors.css );
 
 @font-face { 
 	font-family: "arial narrow"; 
@@ -47,6 +48,7 @@
 .hscroll {
 	overflow-x : auto;
 	}
+
 .imgbox {
 	border : 1px solid silver;
 	width : auto;
@@ -125,7 +127,7 @@ body {
 	font-family : "Segoe UI", Calibri, Verdana, Arial, "Palatino Linotype", Hevetica ;
 	margin : 0 ;
 	line-height : 180% ;
-	font-size : 12pt ;
+	font-size : 14pt ;
 	padding-bottom : 20px ;
 	color : #606060 ;
 	}
@@ -136,6 +138,34 @@ caption {
 
 dd {
 	margin-left: 20px ;
+	}
+
+dl.airy dd {
+	margin-top: 10px ;
+	margin-bottom : 10px;
+	}
+
+dl.collapsible.airy [cbc="collapsed"]+dd {
+	margin-top: 0px ;
+	margin-bottom : 0px;
+	}
+
+dl.collapsible.airy dd[margin-top="0px"]+dd {
+	margin-top: 0px ;
+	margin-bottom : 0px;
+	}
+
+dl.airy dt {
+	margin-top : 20px ;
+	}
+
+dl.collapsible.airy dt[cbc="collapsed"] {
+	margin-top : 0px ;
+	margin-bottom : 0px ;
+	}
+
+dl.airy-titles dd+dt {
+	margin-top : 20px ;
 	}
 
 div.math {
@@ -163,7 +193,7 @@ dl.unspaced-items dd {
 	}
 	
 dl.syntax { 
-	font-family : Merriweather, "Times New Roman", "Bookman Old Style", Garamond ;
+	font-family : Merriweather, "Times New Roman", "Bookman Old Style", Garamond ; 
 	font-size : 110% ;
 	}
 
@@ -270,12 +300,16 @@ pre {
 	margin-left : 0px ; 
 	padding : 10px 10px 11px 10px ;
 	overflow: auto ;
-	tab-size : 4 ;
 	}
 
 pre.tall {
 	display : inline-block;
 	max-width: 95% ;
+	}
+
+table {
+	margin-top : 20px ;
+	margin-bottom : 20px ;
 	}
 
 table caption { 
@@ -292,6 +326,7 @@ table.centered tbody td {
 
 table.flat-borders {
 	border-spacing : 0px ;
+	border-collapse: collapse;
 	}
 
 table.flat-borders tr>* {
