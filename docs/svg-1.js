@@ -1,5 +1,5 @@
-﻿//
-//  svg-1.js    2022-08-02    usp
+//
+//  svg-1.js    2023-05-09    usp
 //
 
 export const svgNameSpace = "http://www.w3.org/2000/svg" ;
@@ -10,7 +10,7 @@ export function createElement( name, attributes = { } ) {
 	return e ;
 	}
 
-export function arc ( x1, y1, r, a, x2, y2 attributes = { } ) {
+export function arc ( x1, y1, r, a, x2, y2, attributes = { } ) {
 	attributes.d = `M ${x1} ${y1} A ${r} ${r} ${a} 0 0 ${x2} ${y2}` ;
 	return createElement( "path", attributes );
 	}

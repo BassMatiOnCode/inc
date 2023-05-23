@@ -1,4 +1,4 @@
-﻿//
+//
 // loader-4.js  2021-08-02  usp
 // usage: loader.loadFragments( ).then(( ) => postProcess( ));
 //
@@ -18,6 +18,7 @@ export function loadFragments ( container = document.body ) {
 		promises.push( fetch( url )
 			.then ( response => response.ok ? response.text( ) : "Not found: " + url )
 			.then (( text ) => { 
+				console.log( "Processing: ", url );
 				if ( ! e.hasAttribute( "replace" )) e.innerHTML = text.trim( );
 				else {
 					const template = document.createElement( "TEMPLATE" );
