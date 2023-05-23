@@ -11,6 +11,7 @@
 @import url( navigation/path-bar-1.css );
 @import url( counter.css );
 @import url( css/underlined-figcaption.css );
+@import url( css/math.css );
 @import url( /site.css );
 @import url( /colors.css );
 
@@ -117,10 +118,8 @@
 	border : 1px solid silver ;
 	}
 
-[symbol] {
-	font-family : "Cambria Math", "Times New Roman" ;
-	xfont-style : italic ;
-	padding-right : 3px ;
+[topic-change] {
+	margin-top : 40px ;
 	}
 
 body {
@@ -130,6 +129,7 @@ body {
 	font-size : 14pt ;
 	padding-bottom : 20px ;
 	color : #606060 ;
+	tab-size : 4 ;
 	}
 	
 caption {
@@ -166,20 +166,6 @@ dl.collapsible.airy dt[cbc="collapsed"] {
 
 dl.airy-titles dd+dt {
 	margin-top : 20px ;
-	}
-
-div.math {
-	padding-left : 20px ;
-	margin-top : 30px ; 
-	margin-bottom : 20px ;
-	}
-
-div.math > div {
-	display : inline-block ;
-	}
-
-div.math + div.math {
-	margin-top : 30px ;
 	}
 
 dl.description-list dd {
@@ -222,10 +208,10 @@ figcaption {
 	line-height : 150% ;
 	}
 
-figcaption+pre {
+figcaption+dl {
 	margin-top : 0px ;
-	margin-bottom : 40px ;
-	border : 1px solid silver;
+	padding-top : 5px ;
+	border-top : 1px solid silver ;
 	}
 
 figcaption+iframe {
@@ -237,11 +223,15 @@ figcaption+iframe {
 figcaption+img {
 	border-top : 1px solid silver;
 	}
-
-figcaption+dl {
+	
+figcaption+pre {
 	margin-top : 0px ;
-	padding-top : 5px ;
-	border-top : 1px solid silver ;
+	margin-bottom : 40px ;
+	border : 1px solid silver;
+	}
+
+figcaption+table {
+	margin-top : 0px ;
 	}
 
 figure { 
@@ -292,6 +282,10 @@ ul[compact] li {
 	margin-top : 10px ;
 	margin-bottom : 10px ;
 	}
+	
+p.box {
+	padding : 10px ;
+	}
 
 pre { 
 	font-family: "Droid Sans Mono", "Times New Roman", "Palatino Linotype", Serif, Consolas;
@@ -300,6 +294,7 @@ pre {
 	margin-left : 0px ; 
 	padding : 10px 10px 11px 10px ;
 	overflow: auto ;
+	tab-size : 2 ;
 	}
 
 pre.tall {
@@ -337,9 +332,11 @@ table.flat-borders tr>* {
 	padding-right: 5px;
 	}
 
-table.flat-borders colgroup+tbody :first-child *,
-table.flat-borders colgroup+thead :first-child *,
-table.flat-borders :first-child :first-child *	{
+table.flat-borders colgroup+tbody>tr:first-child>th,
+table.flat-borders colgroup+tbody>tr:first-child>td,
+table.flat-borders colgroup+thead>tr:first-child>th,
+table.flat-borders colgroup+thead>tr:first-child>td,
+table.flat-borders :first-child :first-child th	{
 	border-top-style : solid ;
 	}
 
