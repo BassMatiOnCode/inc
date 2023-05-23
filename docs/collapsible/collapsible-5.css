@@ -39,7 +39,7 @@
     background-image : url("/inc/collapsible/orange-plus-active.svg") !important ;
 	}
 h1[cbc], h2[cbc], h3[cbc], h4[cbc], h5[cbc] {
-	margin-top : 30px ;
+	margin-top : 50px ;
 	}
 h1[cbc]:before, h2[cbc]:before, h3[cbc]:before, h4[cbc]:before, h5[cbc]:before {
     width : 40px ;	
