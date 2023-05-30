@@ -1,4 +1,4 @@
-//
+﻿//
 // collapsible-block-5.js  2022-09-24  usp
 //
 
@@ -123,7 +123,10 @@ function expand( controller ) {
 		block.style.height = "auto" ;
 		const height = block.scrollHeight + "px" ;
 		block.style.height = "0px" ;
-		window.requestAnimationFrame (( function( ) { this.style.height = height } ).bind( block )) ;
+		window.requestAnimationFrame (( function( ) { 
+			this.style.height = height ; 
+			block.style.overflowX = "visible" ;
+			} ).bind( block )) ;
 		}	)
 	controller.setAttribute( "cbc", "expanded" );
 	}
@@ -131,7 +134,10 @@ function expand( controller ) {
 function collapse( controller ) {
 	controller.synesis.collapsibleBlocks.forEach ( block => {
 		block.style.height = block.scrollHeight + "px" ;
-		window.requestAnimationFrame( (function ( ) {  this.style.height = "0px" } ).bind( block )) ;
+		window.requestAnimationFrame( (function ( ) {  
+			this.style.height = "0px" ;
+			block.style.overflowX = "hidden" ;
+			} ).bind( block )) ;
 		}	)
 	controller.setAttribute( "cbc", "collapsed" );
 	}

@@ -1,4 +1,4 @@
-/*
+﻿/*
  *	page.css
  *	2023-05-15 usp
  */
@@ -244,6 +244,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight : normal ;
 	margin-top : 40px;
 	margin-bottom : 10px;
+	}
+
+h1+div, h2+div, h3+div, h4+div, h5+div, h6+div {
+	overflow-x : visible ;
 	}
 
 h1+h2, h2+h3, h3+h4, h4+h5 {
