@@ -1,8 +1,22 @@
-/*		math-1.css    2023-05-17    usp										*/
+/*		math-1.css    2023-05-27    usp										*/
 /*		Documentation @ .../web-toolbox/css/math.htm		*/
 
+[h-padded] { 
+	padding-left: 10px ; 
+	padding-right: 10px ; 
+	}
+
 [overline] {
-	text-decoration : overline ;
+	text-decoration : overline from-font ;
+	}
+
+[overline2] { 
+	border-top : 1px solid ; 
+	padding-top : 2px ; 
+	}
+
+[padded] { 
+	padding: 8px 10px; 
 	}
 
 [symbol] {
@@ -12,6 +26,21 @@
 [symbol][italic] {
 	font-style : italic ;
 	padding-right : 3px ;
+	}
+
+[underline] { 
+	border-bottom : 1px solid ; 
+	padding-bottom : 2px ; 
+	}
+
+[underline2] { 
+	border-bottom : 1px solid ; 
+	padding-bottom : 2px ; 
+	}
+
+[v-padded] { 
+	padding-top: 10px ; 
+	padding-bottom: 10px ; 
 	}
 
 div.math {
@@ -26,4 +55,19 @@ div.math > div {
 
 div.math + div.math {
 	margin-top : 30px ;
+	}
+
+mtable[linebreaker] mtd {
+	padding-top : 10px ;
+	padding-bottom : 10px ;
+	text-align : left ;
+	}
+
+mtable[rows-separated] mtd {
+	padding-top : 10px ;
+	padding-bottom : 10px ;
+	}
+
+mtable[left-aligned] mtd {
+	text-align : left ;
 	}

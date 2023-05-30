@@ -4,9 +4,9 @@
 [cbc] {
 	}
 [cbc]+div {
-	margin-left: -30px ;
+	margin-left : -30px ;
 	padding-left : 30px ;
-	overflow-y : hidden ;
+	overflow-y : visible;
 	}
 [cbc]:before {
     content : "\00A0"  ;  /* non-breaking space gives it a content */
