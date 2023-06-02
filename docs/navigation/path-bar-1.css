@@ -5,7 +5,7 @@
 div.path-bar { 
 	border : 1px darkorange ;
 	border-style : none none solid none ;
-	height : 30px ;
+	/* height : 30px ; */
 	position : relative ;
 	overflow : hidden ;
 	user-select : none ;
@@ -25,6 +25,8 @@ div.path-bar div {
 	border : 1px none silver ;
 }
 div.path-bar div.content {
+	display : inline-block ;
+	position : relative ;
 	left : 20px ;
 	white-space : nowrap ;
 	}
