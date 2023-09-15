@@ -2,7 +2,7 @@
 ///  dom-helper-1.js   ES2016 module   2023-06-03   usp
 ///  
 
-export const swap = function ( o, a, b ) {
+export const swap = function ( o=globalThis, a, b ) {
 	const t = o[ a ];
 	o[ a ] = o[ b ];
 	o[ b ] = t ;
@@ -16,7 +16,7 @@ export  const swapAttributes = function ( e, a, b ) {
 	} ;
 
 export const setAttributes = function ( e, attributes ) {
-	attributes = Object.values( attributes );
+	attributes = Object.entries( attributes );
 	for ( const [key, value] of attributes ) e.setAttribute( key, value );
 	return e ;
 	} ;

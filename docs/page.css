@@ -1,4 +1,4 @@
-﻿/*
+/*
  *	page.css
  *	2023-05-15 usp
  */
@@ -123,13 +123,13 @@
 	}
 
 body {
-	font-family : "Segoe UI", Calibri, Verdana, Arial, "Palatino Linotype", Hevetica ;
-	margin : 0 ;
-	line-height : 180% ;
-	font-size : 14pt ;
-	padding-bottom : 20px ;
-	color : #606060 ;
-	tab-size : 4 ;
+	font-family : "Segoe UI", Calibri, Verdana, Arial, "Palatino Linotype", Hevetica;
+	margin : 0;
+	line-height : 180%;
+	font-size : 14pt;
+	padding-bottom : 20px;
+	color : #606060;
+	tab-size : 4;
 	}
 	
 caption {

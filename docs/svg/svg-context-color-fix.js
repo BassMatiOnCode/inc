@@ -1,5 +1,6 @@
 //		svg-context-color-fix-1.js    2023-05-11    usp
 //		JavaScript module. To use it, simply add or link to this script in your html file.
+//		Limitations: Marker attributes inherited from g containers are not recognized.
 
 	// These might be useful elsewhere:
 export const cssColorParser = new RegExp( "rgb\\((\\d+), (\\d+), (\\d+)\\)" );

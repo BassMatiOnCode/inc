@@ -64,10 +64,14 @@ mtable[linebreaker] mtd {
 	}
 
 mtable[rows-separated] mtd {
-	padding-top : 10px ;
-	padding-bottom : 10px ;
+	padding-top : 15px ;
+	padding-bottom : 15px ;
 	}
 
 mtable[left-aligned] mtd {
 	text-align : left ;
+	}
+
+mtext[eq-label] {
+	margin-right : 30px ;
 	}
