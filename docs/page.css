@@ -383,3 +383,7 @@ tt {
 	/* right arrow: &#8407; */
 vector { font-style : italic }
 vector > arrow { vertical-align : 3px }
+
+video {
+	 border : 1px solid silver ;
+	}
