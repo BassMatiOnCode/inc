@@ -140,6 +140,11 @@ dd {
 	margin-left: 20px ;
 	}
 
+dd pre {
+	margin-top : 0px ;
+	margin-bottom : 0px ;
+	}
+
 dl.airy dd {
 	margin-top: 10px ;
 	margin-bottom : 10px;
