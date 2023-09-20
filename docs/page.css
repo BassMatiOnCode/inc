@@ -3,6 +3,7 @@
  *	2023-05-15 usp
  */
 
+@import url( colors.css );
 @import url( header-2.css );
 @import url( footer-2.css );
 @import url( toolbar/toolbar-2.css );
@@ -13,7 +14,6 @@
 @import url( css/underlined-figcaption.css );
 @import url( css/math.css );
 @import url( /site.css );
-@import url( /colors.css );
 
 @font-face { 
 	font-family: "arial narrow"; 
