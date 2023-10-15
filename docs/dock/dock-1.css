@@ -1,1 +1,35 @@
-../../../wtbx-dock/code/dock-1.css
+/* dock-1.css  2023-10-14  usp */
+
+[dock] {
+	position : absolute ;
+	border : 1px solid orange ;
+	background-color : white ;
+	overflow : hidden ;
+	display : none ;
+	}
+[dock = "left"], [dock = "right"] {
+	top : 0px ;
+	bottom : 0px ;
+	width : 0px ;
+	max-width : calc( 100% - 2px );
+	transition : width linear 1s ;
+	}
+[dock = "left"] {
+	left : 0px ;
+	}
+[dock = "right"] {
+	right : 0px ;
+	}
+[dock = "top"], [dock = "bottom"] {
+	left : 0px ;
+	right : 0px ;
+	max-height : calc( 100% - 2px );
+	height : 0px ;
+	transition : height linear 1s ;
+	}
+[dock = "top"] {
+	top : 0px ;
+	}
+[dock = "bottom"] {
+	bottom : 0px ;
+	}
