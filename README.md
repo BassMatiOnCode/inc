@@ -1,2 +1,3 @@
 # inc
-Include files for the site
+Include files for the site.
+
