@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="-31 -31 62 62" xwidth="62" xheight="62" xstyle="border:1px solid silver;margin:10px" xmlns="http://www.w3.org/2000/svg">
-
-<path d="M-30 12 A 40 40 10 0 1 8 -10 A 40 40 10 0 0 -1 -17 A 40 40 10 0 1 28 -12 A 40 40 10 0 1 8 10 A 40 40 10 0 0 11 -1 A 40 40 10 0 0 -9 18 A 15 15 10 0 0 -30 12 Z" stroke="blue" stroke-width="2" stroke-linejoin="bevel" fill="cornflowerblue" />
-
-</svg>

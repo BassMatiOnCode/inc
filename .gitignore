@@ -2,3 +2,7 @@
 .vs
 *.bak
 *.rar
+/docs-old
+/test
+/docs-new.7z
+/docs.7z

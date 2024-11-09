@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="-51 -51 102 102" xwidth="102" xheight="102" xstyle="border:1px solid silver;margin:10px" xmlns="http://www.w3.org/2000/svg">
-
-<path d="M-45-20 a 5 5 90 0 1 5 -5 h 80 a 5 5 90 0 1 5 5 v 50 a 5 5 90 0 1 -5 5 h-80 a 5 5 90 0 1 -5 -5 v -63 a 5 5 90 0 1 5 -5 h20 a 5 5 90 0 1 5 5 v 8" stroke="#666" stroke-width="2" fill="gold" />
-
-</svg>
