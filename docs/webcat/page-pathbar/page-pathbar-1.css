@@ -1,0 +1,25 @@
+/*   documentation: .../webcat/page-pathbar/page-pathbar.htm   */
+
+div.page-pathbar.scroll-box { 
+	position : relative ;	
+	border-bottom : 1px none silver ;
+	margin : 0 -20px 0 -20px ;
+	height : 31px ;
+	}
+div.page-pathbar a {
+	text-decoration : none ;
+	color : #aaa ;
+	}
+div.page-pathbar a:hover {
+	text-decoration : underline ;
+	}
+xdiv.page-pathbar div {
+	border-style : solid ;
+	}
+div.page-pathbar .curtain {
+	border : 0 ;
+	border-bottom : 1px solid silver ;
+	}
+div.page-pathbar .item-container {
+	padding : 2px 5px 2px 20px ;
+	}

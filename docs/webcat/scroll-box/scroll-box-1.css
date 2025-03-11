@@ -1,0 +1,11 @@
+/* Documentation: .../web-toolbox/scroll-box/scroll-box.htm */
+
+.scroll-box.horizontal { border : 1px none silver ; height : 30px ; visibility : hidden }
+	/* curtain */
+.scroll-box.horizontal > div { border : 1px solid silver ; overflow : hidden ; transition : height 0.4s 0.3s linear }
+	/* scrollbar provider */
+.scroll-box.horizontal > div > div { padding : 2px ; overflow-x : auto ; scrollbar-color : #aaa #eee }
+	/* item container */
+.scroll-box.horizontal > div > div > div { white-space : nowrap ; display : inline-block }
+	/* items */
+.scroll-box.horizontal > div > div > div > div { display : inline-block }

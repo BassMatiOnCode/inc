@@ -1,0 +1,86 @@
+	/* 2025-03-02 */
+:root {
+	--math-fonts : "Cambria Math", "Asana Math", "STIX2 Math Regular" , "Times New Roman" ;
+	}
+.equation-number {
+	font-family : "Cambria Math", "Asana Math", "STIX2 Math Regular" , "Times New Roman" ;
+	}
+div.math-text {
+	margin-left : 10px ;
+	position : relative ;
+	padding-right : 40px ;
+	font-family : "Cambria Math", "Asana Math", "STIX2 Math Regular" , "Times New Roman" ; 
+	}
+figure.definition math {
+	margin : 10px 0 ; 
+	}
+math {
+	display: block math ;
+    math-style: normal ;
+	font-family : "Cambria Math", "Asana Math", "STIX2 Math Regular" , "Times New Roman" ;
+	margin-top : 16px ;
+	margin-bottom : 16px ; 
+	overflow : hidden ;
+	}
+math:hover {
+	overflow-x : auto ;
+	overflow-y : clip ;
+	}
+mi.overline {
+	border-top: 0.7px solid black;
+	padding-top: 2px
+	}
+mtable.col-vector mtd:first-child {
+	padding-left : 0 ;
+	}
+mtable.col-vector mtd:last-child {
+	padding-right: 0;
+}
+	/* for layouts with numbered equations */
+mtable.layout > mtr:first-child > mtd:first-child {
+	box-sizing : border-box ;
+	width : 100% ;
+	}
+mtable.left-aligned > mtr > mtd:first-child {
+	text-align : left ;
+	text-align : -webkit-left ;
+	}
+	/* vertical axis aligned */
+mtable.vaxis-aligned > mtd {
+	box-sizing : border-box ;
+	}
+mtable.vaxis-aligned > mtr > mtd:first-child {
+	text-align : right ;
+	text-align : -webkit-right ;
+	}
+mtable.vaxis-aligned > mtr:first-child > mtd:first-child {
+	width : 50% ;
+	}
+mtable.vaxis-aligned > mtr:first-child > mtd:nth-child( 2 ) {
+	width : auto ;
+	}
+mtable.vaxis-aligned > mtr > mtd:nth-child( 3 ) {
+	text-align : left ;
+	text-align : -webkit-left ;
+	}
+mtable.vaxis-aligned > mtr:first-child > mtd:nth-child( 3 ) {
+	width : 50% ;
+	}
+math mi,
+math mo {
+	/* The only way to enforce a uniform minimum line height */
+	min-height : 15px ;
+	}
+mtd:has(mtext.equation-number) {
+	padding-right : 0 ;
+	}
+mtd > mtext.equation-number {
+	background-color : white ;
+	position : relative ;  /* this enables z-index and makes bgcolor visible */
+	}
+p math { 
+	display: math ; 
+	math-style : compact ;
+	margin-top : unset ;
+	margin-bottom : unset ;
+	}

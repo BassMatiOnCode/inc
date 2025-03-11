@@ -1,0 +1,119 @@
+@import url( ../page-header/page-header-1.css );
+@import url( ../page-pathbar/page-pathbar-1.css );
+@import url( ../page-toolbar/page-toolbar-1.css );
+@import url( ../scroll-box/scroll-box-1.css );
+@import url( ../page-main/page-main-1.css );
+@import url( ../horizontal-title-rule/horizontal-title-rule-1.css );
+@import url( ../tool-buttons/collapse-chapters-button-1.css );
+@import url( ../page-footer/page-footer-1.css );
+@import url( ../page-abstract/page-abstract-1.css );
+@import url( ../docking-panel/docking-panel-1.css );
+@import url( ../navigation-panel/navigation-panel-1.css );
+@import url( ../table-styles/flat-borders-1.css );
+@import url( ../table-styles/data-centered-1.css );
+@import url( ../style-components/sourcecode.css );
+@import url( ../style-components/figure-styles.css );
+@import url( ../style-components/description-list.css );
+@import url( ../content-height-observer/content-height-observer-1.css );
+@import url( ../checked-items/checked-items-1.css );
+@import url( ../collapsible-structures/collapsible-structures-1.css );
+@import url( ../scroll-box/scroll-box-1.css );
+@import url( ../sitemap-navigator/sitemap-navigator-1.css );
+@import url( ../css-counter/css-counter-1.css );
+@import url( ../literature-reference-list/literature-reference-list-1.css );
+@import url( ../link-target-highlighter/link-target-highlighter-1.css );
+@import url( ../math/math-1.css );
+@import url( ../math/math-text-1.css );
+@import url( ../page-colors/page-colors-1.css );
+
+@font-face { 
+	font-family: "arial narrow"; 
+	font-style: normal; 
+	font-weight: 400;
+	src: 	local("Arial Narrow"), 
+		local("ArialNarrow-Regular"), 
+		url(/inc/fonts/arial-narrow.woff) format("woff"), 
+		url(/inc/fonts/arial-narrow.ttf) format("truetype");
+	}
+@font-face {  
+		/* unused */
+	font-family: "constantia"; 
+	font-style: normal; 
+	font-weight: 400;
+	src: 	local("Constantia"), 
+		local("Constantia"), 
+		url(/inc/fonts/constantia.ttf) format("truetype");
+	}
+@font-face { 
+		/* unused */
+	font-family: "droid sans mono"; 
+	font-style: normal; 
+	font-weight: 400;
+	src: 	local("droid sans mono"), 
+		url(/inc/fonts/DroidSansMono.ttf) format("truetype");
+	}
+@font-face { 
+	font-family: "M+ 1m"; 
+	font-style: normal;
+	font-weight: 400;
+	src: 	local("M+ 1m"), 
+		url(/inc/fonts/mplus-1m-regular.ttf) format("truetype");
+	}
+@font-face { 
+		/* unused */
+	font-family: "encode sans condensed"; 
+	font-style: normal; 
+	font-weight: 400;
+	src: 	local("encode sans condensed"), 
+		url(/inc/fonts/EncodeSansCondensed-Regular.ttf) format("truetype");
+	}
+@font-face {
+		/* for code listing blocks */	
+	font-family: "inconsolata condensed"; 
+	font-style: normal; 
+	font-weight: 400;
+	src: 	local("inconsolata condensed"), 
+		url(/inc/fonts/Inconsolata-variable-wdth-wght.ttf) format("truetype");
+	}
+body { 
+	font-family : "Segoe UI" ;
+	margin : 0 20px 50px 20px ;
+	}
+div.citation {
+	font-family : "Paladino", "Palatino Linotype", "Times New Roman" ;
+	font-style : normal ;
+	margin-left : 20px ;
+	}
+h1, h2, h3, h4, h5 { font-family : "Times New Roman", "Arial Narrow" ; font-weight : normal ; margin-left : -20px }
+h1 { margin-left : 0 ; text-align : center }
+main { margin-left : 20px }
+ol > li, ul > li { margin-top: 5px ; margin-bottom : 5px }
+ol.spaced-items li, ul.spaced-items li { margin-top: 20px ; margin-bottom : 20px }
+p { line-height: 1.8 }
+p.subtitle { 
+	text-align : center ; 
+	margin-top : 0 ; 
+	margin-bottom : 30px ; 
+	font-family : "paladino", "palatino linotype", "times new roman" ;
+	}
+span.keyword { font-family : "Paladino", "Palatino Linotype", "Times New Roman" }
+table > caption { 
+	text-align : left ;
+	font-family : "Times New Roman" ;
+	margin-bottom : 5px ;
+	}
+tt { 
+	font-family : "Segoe UI", "Times New Roman" ;
+	font-variant-numeric : lining-nums tabular-nums slashed-zero ; 
+	}
+ul.no-bullets { list-style-type : none }
+
+.note { border-left : 8px dotted lightblue ; padding-left : 15px }
+div.note { padding-bottom : 0 }
+
+/* * * z-index management * * */
+
+body { position : relative ; z-index : -4 }
+main { z-index : -3 }
+#mainToolbar { z-index : -2 }
+.pagePathbar { z-index : -1 }
