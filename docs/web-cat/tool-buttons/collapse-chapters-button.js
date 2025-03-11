@@ -1,1 +1,0 @@
-collapse-chapters-button-1.js

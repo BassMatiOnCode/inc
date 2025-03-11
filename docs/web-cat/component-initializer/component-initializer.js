@@ -1,1 +1,0 @@
-component-initializer-1.js

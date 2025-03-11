@@ -1,1 +1,0 @@
-next-chapter-button-1.js

@@ -1,1 +1,0 @@
-docking-panel-1.js
