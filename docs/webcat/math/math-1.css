@@ -1,8 +1,8 @@
-	/* 2025-03-02 */
+	/* 2025-03-03 */
 :root {
 	--math-fonts : "Cambria Math", "Asana Math", "STIX2 Math Regular" , "Times New Roman" ;
 	}
-.equation-number {
+equation-number {
 	font-family : "Cambria Math", "Asana Math", "STIX2 Math Regular" , "Times New Roman" ;
 	}
 div.math-text {
@@ -26,14 +26,34 @@ math:hover {
 	overflow-x : auto ;
 	overflow-y : clip ;
 	}
-mi.overline {
+mi.overline,
+mtext.overline {
 	border-top: 0.7px solid black;
 	padding-top: 2px
+}
+mrow.hspace mi {
+	padding-left : 1px ;
+	padding-right : 1px ;
 	}
-mtable.col-vector mtd:first-child {
-	padding-left : 0 ;
+mrow.numbered {
+	padding-right : 50px ;
 	}
-mtable.col-vector mtd:last-child {
+mrow.numbered > mtext:last-child {
+	position : absolute ;
+	width : auto ;
+	right : 0px ;
+	background-color : white ;
+	padding-left: 3px;
+	}
+
+mtable.fenced mtd {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+mtable.fenced mtd:first-child {
+	padding-left: 0;
+}
+mtable.fenced mtd:last-child {
 	padding-right: 0;
 }
 	/* for layouts with numbered equations */
@@ -66,9 +86,10 @@ mtable.vaxis-aligned > mtr > mtd:nth-child( 3 ) {
 mtable.vaxis-aligned > mtr:first-child > mtd:nth-child( 3 ) {
 	width : 50% ;
 	}
-math mi,
-math mo {
+xxx-math mi,
+xxx-math mo {
 	/* The only way to enforce a uniform minimum line height */
+	/* That doesn't work, spoils the position of subscripts! */
 	min-height : 15px ;
 	}
 mtd:has(mtext.equation-number) {
