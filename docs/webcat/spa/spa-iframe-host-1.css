@@ -1,0 +1,17 @@
+/* spa-host-1.css    2025-10-06    usp */
+
+iframe#mainContent {
+	border : 1px none silver ;
+	box-sizing : border-box ;
+	width : 100% ;
+	}
+body { 
+	margin : 0 
+	}
+header, #mainToolbar, div.page-pathbar.scroll-box  {
+	margin-left : 0 ;
+	margin-right : 0 ;
+	}
+	
+
+

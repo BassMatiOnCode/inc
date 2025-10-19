@@ -1,0 +1,7 @@
+html { 
+	height : fit-content ;  /* window is just as tall as necessary */
+	overflow-y : hidden ;  /* prevents vertical scrollbar when a horizontal scrollbar is shown */
+	}
+body {
+	padding-top : 0 ;
+	}
