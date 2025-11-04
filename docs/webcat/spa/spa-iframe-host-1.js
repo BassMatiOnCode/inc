@@ -21,7 +21,6 @@ const configuration = new URLSearchParams( import.meta.url );
 					target.scrollIntoView( { behavior : "smooth" } ); 
 				}	}	
 		} } ) ; } ) ; 
-
 	const sp = new URLSearchParams( document.location.search );
 	let url = sp.get( "goto" ) ;
 	if ( ! url ) url = configuration.get( "landing-page" ) || "landing-page.htm" ; 
@@ -29,7 +28,7 @@ const configuration = new URLSearchParams( import.meta.url );
 		sp.delete( "goto" );
 		if ( sp.size > 0 ) url += `?${ sp.toString( ) }` ;
 		url += document.location.hash ;
-		history.replaceState( null, "", "host.htm" );
+		history.replaceState( null, "", "index.htm" );
 		}
 	navigation.navigate( url );
 	} ) ( ) ;
