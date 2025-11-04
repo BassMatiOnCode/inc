@@ -6,13 +6,18 @@ import * as smp from "/inc/webcat/scroll-margin-provider/scroll-margin-provider.
 ( async function initialize( ) {
 	// Initializes an SPA content document.
 	console.log( `Initializing ${ document.location.href }` );
-	window.frameElement.style.height = "150px" ;
-	await loader.loadFragments( );
-	const observer = new ResizeObserver(( entries ) => {
-		// console.debug( entries[ 0 ].target.offsetHeight, window.frameElement.scrollHeight );
-		window.frameElement.style.height = entries[ 0 ].target.offsetHeight + 0 +  "px" ;
-		} ) ;
-	observer.observe( document.documentElement );
+	if ( window.frameElement ) {
+		// Reduce host iframe so that it can be fitted to the actual size later.
+		// TODO: Is this really necessary?
+		window.frameElement.style.height = "150px" ;
+		await loader.loadFragments( );
+		const observer = new ResizeObserver(( entries ) => {
+			// console.debug( entries[ 0 ].target.offsetHeight, window.frameElement.scrollHeight );
+			window.frameElement.style.height = entries[ 0 ].target.offsetHeight + 0 +  "px" ;
+			} ) ;
+		observer.observe( document.documentElement );
+		}
+	// Scroll to target element
 	requestAnimationFrame(( ) => 
 	requestAnimationFrame(( ) => {
 		const target = document.getElementById( document.location.hash.substring( 1 ));
@@ -21,5 +26,5 @@ import * as smp from "/inc/webcat/scroll-margin-provider/scroll-margin-provider.
 			target.style.scrollMarginTop = marginTop + "px" ;
 			target.style.scrollMarginBottom = marginBottom + "px" ;
 			target.scrollIntoView( { behavior : "smooth" } ); 
-	} } ) ) } ) ( ) ;
-
+	} } ) ) 
+	} ) ( ) ;
