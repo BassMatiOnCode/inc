@@ -1,11 +1,26 @@
 // Documentation: .../web-toolbox/scroll-margin-provider/scroll-margin-provider.htm
-
+//	2025-10-06 USP
 import * as initializer from "../component-initializer/component-initializer-1.js" ;
 
 /** Module configuration parameters */ const configuration = {
 	recalculate : true ,
 	marginTop : 0 ,
 	marginBottom : 0
+	}
+
+export function getScrollMargins ( parent = document ) {
+	//	Calculates the scroll margins from sticky toolbars.
+	//	Returns an object with scroll margin values.
+	let marginTop = 0 ;
+	let marginBottom = 0;
+	for ( const element of parent.querySelectorAll( '.toolbar' )) {
+		const style = getComputedStyle( element ) ;
+		if ( style.position === "sticky" && style.top !== "auto" )  
+			marginTop = Math.max( marginTop, parseInt( style.top || 0 ) + element.offsetHeight );
+		else if ( style.position === "sticky" && style.bottom !== "auto" ) 
+			marginBottom = Math.max( marginBottom, parseInt( style.bottom || 0 ) + element.offsetHeight + 1 ) ;
+		}
+	return { marginTop, marginBottom } ;
 	}
 
 /**
@@ -15,15 +30,8 @@ import * as initializer from "../component-initializer/component-initializer-1.j
 *
 */ export function initDocument ( ) {
 	// Determine current scroll margins
-	let marginTop = 0 ;
-	let marginBottom = 0;
-	for ( const element of document.querySelectorAll( '.toolbar' )) {
-		const style = getComputedStyle( element ) ;
-		if ( style.position === "sticky" && style.top !== "auto" )  
-			marginTop = Math.max( marginTop, parseInt( style.top || 0 ) + element.offsetHeight );
-		else if ( style.position === "sticky" && style.bottom !== "auto" ) 
-			marginBottom = Math.max( marginBottom, parseInt( style.bottom || 0 ) + element.offsetHeight + 1 ) ;
-		}
+	const { marginTop, marginBottom } = getScrollMargins( );
+	// TODO: Eliminate the code below. Whenever a scroll margin is required, the search loop above must be executed anyway, so it makes no sense to set the scroll margins on certain elements.
 	// Configuration update required?
 	if ( configuration.marginTop === marginTop && configuration.marginBottom === marginBottom ) return ;
 	// Update configuration

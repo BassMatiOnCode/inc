@@ -6,7 +6,8 @@ import * as smp from "/inc/webcat/scroll-margin-provider/scroll-margin-provider.
 ( async function initialize( ) {
 	// Initializes an SPA content document.
 	console.log( `Initializing ${ document.location.href }` );
-	if ( window.frameElement ) {
+	if ( ! window.frameElement ) document.documentElement.style.overflow = "auto" ;
+	else {
 		// Reduce host iframe so that it can be fitted to the actual size later.
 		// TODO: Is this really necessary?
 		window.frameElement.style.height = "150px" ;

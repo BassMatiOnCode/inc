@@ -1,0 +1,7 @@
+
+/* Styles for math fragments in stand-alone documents */
+
+figure.math-fragment-content figcaption {
+	font-size : 24px ;
+	color : #4f6aa1 ;
+	}

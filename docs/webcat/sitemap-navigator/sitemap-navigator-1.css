@@ -1,4 +1,4 @@
-/*   documentation: .../webcat/sitemap-navigator/sitemap-navigator.htm   */
+﻿/*   documentation: .../webcat/sitemap-navigator/sitemap-navigator.htm   */
 
 	/* Icon image for collapsed state */
 .sitemap-tree [ data-collapsible-state = "collapsed" ]:not( .active )::before {
@@ -13,17 +13,20 @@
 		/* Icon image for active document */
 .sitemap-tree :not([ data-collapsible-state ]).active::before {
 		/* We cannot set a top property because the element has position:absolute and that moves the icon way up to the parent */
-		content : "\00A0";
-		position : absolute;
+		content : " ";
+		position : absolute; 
 		left: 0px;
-		width : 20px;
+		width : 15px;
 		height : 25px;  /* this effectively determines the vertical position */
 		background-size: 15px 15px;
 		background-repeat: no-repeat;
 		background-position: left center;
 		background-image : url( ../collapsible-structures/orange-dot.svg );
 	}
-
+.sitemap-tree [data-collapsible-state="collapsed"] :not([ data-collapsible-state ]).active::before {
+	/* THIS IS A HACK. The container does not clip content properly. */
+	background-image : none ;
+	}
 .sitemap-tree > :not([ data-collapsible-state ]).active::before {
 	left : 20px ;
 	}

@@ -57,8 +57,6 @@ import * as initializer from "../component-initializer/component-initializer.js"
  */ function injectFragment( content , anchor ) {
 	console.debug( "Injecting", content.childNodes.length, "nodes", content.children.length, "elements" );
 	// Pending injection notification
-	// TODO: Rename fragment-loading to fragment-loaded
-	// TODO: Rename detail.content to detail.nodes
 	anchor.dispatchEvent( new CustomEvent( "fragment-loading", { bubbles: true, cancelable : true , detail: { content : content } } ) ) ;
 	// Inject content nodes
 	const injectedElements = Array.from( content.children );

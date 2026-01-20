@@ -1,0 +1,19 @@
+figure.math-fragment-content {
+	border : 1px solid silver ;
+	padding : 10px ;
+	padding-bottom : 0 ;
+	}
+figure.math-fragment-content > figcaption {
+	color : cadetblue ;
+	background-color : #F8F8F8 ;
+	border-bottom : 1px solid silver ;
+	margin : -10px -10px 0 -10px ;
+	padding : 10px 10px 8px 10px ;
+	}
+figure.math-fragment-content > figcaption > a {
+	color : cadetblue ;
+	text-decoration : none ;
+	}
+figure.math-fragment-content > figcaption > a:hover {
+	text-decoration : underline ;
+	}

@@ -2,50 +2,49 @@
 :root {
 	--math-fonts : "Cambria Math", "Asana Math", "STIX2 Math Regular" , "Times New Roman" ;
 	}
+div.math-text {
+	line-height : 1.6 ;
+	}
 equation-number {
 	font-family : "Cambria Math", "Asana Math", "STIX2 Math Regular" , "Times New Roman" ;
-	}
-div.math-text {
-	margin-left : 10px ;
-	position : relative ;
-	padding-right : 40px ;
-	font-family : "Cambria Math", "Asana Math", "STIX2 Math Regular" , "Times New Roman" ; 
 	}
 figure.definition math {
 	margin : 10px 0 ; 
 	}
 math {
-	display: block math ;
-    math-style: normal ;
 	font-family : "Cambria Math", "Asana Math", "STIX2 Math Regular" , "Times New Roman" ;
+	}
+math[ display="block" ] {
 	margin-top : 16px ;
 	margin-bottom : 16px ; 
-	overflow : hidden ;
-	}
-math:hover {
 	overflow-x : auto ;
 	overflow-y : clip ;
+	scrollbar-color : transparent transparent ;
 	}
-mi.overline,
+math[ display="block" ]:hover {
+	scrollbar-color : #999 #eee ;
+	}
+math.vspace { 
+	padding-top : 8px ; 
+	padding-bottom : 8px ;
+	}
+mi.overline ,
+mrow.overline ,
 mtext.overline {
-	border-top: 0.7px solid black;
+	border-top: 1px solid black;
 	padding-top: 2px
 }
+mfrac > mrow.overline:nth-child( 2 ) {
+	margin-top : 2px ;
+	}
 mrow.hspace mi {
 	padding-left : 1px ;
 	padding-right : 1px ;
 	}
-mrow.numbered {
-	padding-right : 50px ;
+mrow.margin-h-8 {
+	margin-left : 8px ;
+	margin-right : 8px ;
 	}
-mrow.numbered > mtext:last-child {
-	position : absolute ;
-	width : auto ;
-	right : 0px ;
-	background-color : white ;
-	padding-left: 3px;
-	}
-
 mtable.fenced mtd {
 	padding-left: 2px;
 	padding-right: 2px;
@@ -91,17 +90,4 @@ xxx-math mo {
 	/* The only way to enforce a uniform minimum line height */
 	/* That doesn't work, spoils the position of subscripts! */
 	min-height : 15px ;
-	}
-mtd:has(mtext.equation-number) {
-	padding-right : 0 ;
-	}
-mtd > mtext.equation-number {
-	background-color : white ;
-	position : relative ;  /* this enables z-index and makes bgcolor visible */
-	}
-p math { 
-	display: math ; 
-	math-style : compact ;
-	margin-top : unset ;
-	margin-bottom : unset ;
 	}

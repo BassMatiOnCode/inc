@@ -4,18 +4,21 @@ hb  { color : darkorange ; font-weight : bold }
 hi { color : #cc7000 }
 cc { color : green }
 
-figure.listing pre.mono {
-	font-family : "inconsolata condensed", "constantia", "droid sans mono" ;
-	}
-pre {	/* TODO: This rule must be qualified somehow */
-	font-family : "inconsolata condensed", "constantia", "droid sans mono" ;
-	font-stretch : 75% ;
-	font-weight : normal ;
+figure.listing > pre {
+	font-weight : 400 ;
 	font-variant-numeric : lining-nums tabular-nums slashed-zero ;
-	line-height : 18px ;
 	line-height : 1.4 ;
 	tab-size : 15px ;
+	padding-top : 3px ;
+	padding-bottom : 5px ;
+	overflow-x : auto ;
 }
-pre.mono {
-	font-family : "inconsolata condensed", "constantia", "droid sans mono" ;
+figure.listing > figcaption {
+	border-bottom : 1px solid silver ;
+	margin-bottom : 3px ;
+	}
+pre {
+	margin-top : 3px ;
+	font-family : "inconsolata condensed", "droid sans mono", "arial narrow", "droid sans mono", "constantia" ;
+	font-size : 14px ;
 	}
