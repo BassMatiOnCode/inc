@@ -1,0 +1,45 @@
+body {
+	font-size : 14pt;
+	line-height : 1.4 ;
+	tab-size : 4 ;
+	margin-left : 20px ;
+	}
+dd + dt {
+	margin-top : 20px ;
+	}
+div.input-box [ type="radio" ] {
+	accent-color : black ;
+	}
+div.input-box * {
+	margin-top : 5px ;
+	margin-bottom : 5px ;
+	}
+div.input-box span {
+	 border : 1px solid rgb(118,118,118) ;
+	 border-radius : 5px ;
+	 position : relative ;
+	 top : 2px ;
+	}
+div.input-box span + span {
+	margin-left : 5px ;
+	}
+div.input-box button {
+	margin-left : 5px ;
+	}
+h1 {
+	font-size : 20pt ;
+	}
+h1, h2, h3, h4, h5 {
+	margin-top : 20px ;
+	margin-bottom : 10px ;
+	}
+html {
+	}
+pre {
+	font-family : consolas ;
+	font-size : 12pt ;
+	}
+tt {
+	font-family : "arial narrow" ;
+	font-size : 13pt ;
+	}

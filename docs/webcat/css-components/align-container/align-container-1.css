@@ -1,0 +1,16 @@
+.webcat-align-container {
+	display : flex ;
+	justify-content : space between ;
+	align-items : center ;
+	width : 100% ;
+	}
+.webcat-align-container .webcat-align-left {
+	text-align : left ;
+	}
+.webcat-align-container .webcat-align-center {
+	flex : 1 ;
+	text-align : center ;
+	}
+.webcat-align-container .webcat-align-right {
+	text-align : right ;
+	}

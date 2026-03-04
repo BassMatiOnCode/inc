@@ -1,0 +1,27 @@
+
+body { 
+	margin : 20px ;
+	line-height : 1.4 ;
+	}
+pre {
+	tab-size : 4 ;
+	}
+hi {
+	color : darkorange ;
+	}
+.webcat-study-linkchain {
+	display : flex ;
+	justify-content : space between ;
+	align-items : center ;
+	width : 100% ;
+	}
+.webcat-study-linkchain .left {
+	text-align : left ;
+	}
+.webcat-study-linkchain .center {
+	flex : 1 ;
+	text-align : center ;
+	}
+.webcat-study-linkchain .right {
+	text-align : right ;
+	}
