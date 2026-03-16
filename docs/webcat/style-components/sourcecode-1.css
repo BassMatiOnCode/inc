@@ -3,7 +3,6 @@
 hb  { color : darkorange ; font-weight : bold }
 hi { color : #cc7000 }
 cc { color : green }
-
 figure.listing > pre {
 	font-weight : 400 ;
 	font-variant-numeric : lining-nums tabular-nums slashed-zero ;
@@ -19,6 +18,8 @@ figure.listing > figcaption {
 	}
 pre {
 	margin-top : 3px ;
+	margin-left : 20px ;
 	font-family : "inconsolata condensed", "droid sans mono", "arial narrow", "droid sans mono", "constantia" ;
-	font-size : 14px ;
+	font-size : 16px ;
+	overflow-x : auto ;
 	}
