@@ -58,9 +58,9 @@ export function processContainer (
 	container ,  // the container elements to be processed in this document 
 	url ,  // the math fragment document href if a host document is processed, or null if a math fragment document is processed.
 	createAnchor ,  // true if 
-	stripZeroes, standAlone ) 
-	
-	{
+	stripZeroes,
+	standAlone
+)	{
 	const { fragmentType, fragmentNumber } = createFragmentNumber ( new URL( url ).pathname, stripZeroes ) 
 	setMathFragmentNumber( container, fragmentType, fragmentNumber, stripZeroes );
 	if ( ! standAlone ) {
@@ -68,7 +68,7 @@ export function processContainer (
 		if ( createAnchor ) createMathFragmentAnchor( container, url );
 	}	}
 export function init ( 
-	// Processes math fragment anchors, math fragment documents, and anchors that link to a math fragment document.
+		// Processes math fragment anchors, math fragment documents, and anchors that link to a math fragment document.
 	searchparams, 	// URLSearchParams object, contains parameters passed via script module URL.
 	event,  // Not used.
 	containers = searchparams?.get( "containers" ) || [ document.body ] ,  // the container element(s) to be processed.
