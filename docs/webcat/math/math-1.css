@@ -1,4 +1,4 @@
-	/* 2025-03-03 */
+	/* 2026-05-01 */
 :root {
 	--math-fonts : "Cambria Math", "Asana Math", "STIX2 Math Regular" , "Times New Roman" ;
 	}
@@ -24,17 +24,18 @@ math[ display="block" ] {
 math[ display="block" ]:hover {
 	scrollbar-color : #999 #eee ;
 	}
+math.overline {
+	text-decoration : overline ;
+	}
+math .overlinebox {
+	border-top: 1px solid black;
+	padding-top: 2px
+	}
 math.vspace { 
 	padding-top : 8px ; 
 	padding-bottom : 8px ;
 	}
-mi.overline ,
-mrow.overline ,
-mtext.overline {
-	border-top: 1px solid black;
-	padding-top: 2px
-}
-mfrac > mrow.overline:nth-child( 2 ) {
+mfrac > mrow.overlinebox:nth-child( 2 ) {
 	margin-top : 2px ;
 	}
 mrow.hspace mi {
