@@ -24,7 +24,7 @@ math[ display="block" ] {
 math[ display="block" ]:hover {
 	scrollbar-color : #999 #eee ;
 	}
-math.overline {
+math .overline {
 	text-decoration : overline ;
 	}
 math .overlinebox {
