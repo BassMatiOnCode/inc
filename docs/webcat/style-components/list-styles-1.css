@@ -1,0 +1,7 @@
+ul.no-bullets > li {
+	list-style-type : none ;
+	}
+ul.v-sparse > li {
+	margin-top : 0 ;
+	margin-bottom : 0 ;
+	}

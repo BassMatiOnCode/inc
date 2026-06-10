@@ -1,1 +1,0 @@
-math-fragment-1.js

@@ -10,7 +10,7 @@ export function prepareNumberedEquations (
 		m.before( wrapper );
 		wrapper.appendChild( m );
 		const span = document.createElement( "SPAN" );
-		span.textContent = m.getAttribute( "equ-number" );
+		span.textContent = m.getAttribute( "eqn-num" );
 		wrapper.appendChild( span );
 		}
 	}

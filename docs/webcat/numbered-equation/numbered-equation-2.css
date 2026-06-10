@@ -1,0 +1,14 @@
+/* 2026-05-01 usp */
+
+div.webcat.numbered-equation {
+	position : relative ;
+	}
+div.webcat.numbered-equation div:last-child {
+	position : absolute ;
+	x-display : inline-block ;
+	top : 50% ;
+	right : 0 ;
+	line-height : 1 ;
+	transform : translate( -50% , -50% ) ;
+	}
+
